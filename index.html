@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ceejay Solar — Power Your Future</title>
+  <meta name="description" content="Ceejay Solar — Clean, reliable, and affordable solar energy solutions for homes and businesses. Request a free quote today." />
+  <meta name="keywords" content="solar, solar panels, solar installation, renewable energy, Ceejay Solar, Lagos" />
+  <meta name="author" content="Ceejay Franchise / Emmanuel Asaolu" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Ceejay Solar — Power Your Future" />
+  <meta property="og:description" content="Clean, reliable, and affordable solar energy solutions for homes and businesses." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1594737625785-cd4ca8dfef98?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ceejay Solar — Power Your Future" />
+  <meta name="twitter:description" content="Clean, reliable, and affordable solar energy solutions." />
+
+  <!-- Fallback favicon -->
+  <link rel="icon" href="logo.png" />
+
+  <style>
+    /* -------------------------
+       Reset + Base
+       ------------------------- */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height:1.5;
+      color:#102023;
+      background:linear-gradient(180deg,#f7fbff 0%, #e9f7f7 100%);
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block;height:auto}
+
+    /* Container */
+    .container{width:90%;max-width:1200px;margin:0 auto}
+
+    /* -------------------------
+       Header / Nav
+       ------------------------- */
+    header.site-header{
+      position:sticky;top:0;z-index:1000;
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.85);
+      border-bottom: 1px solid rgba(16,32,35,0.06);
+      box-shadow: 0 2px 8px rgba(16,32,35,0.03);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0}
+    .brand{display:flex;align-items:center;gap:0.75rem;font-weight:800;color:#00796b}
+    .brand img{width:48px;height:48px;border-radius:8px;object-fit:cover}
+    .nav__menu{display:flex;gap:1rem;align-items:center}
+    .nav__link{padding:0.4rem 0.6rem;border-radius:8px;font-weight:600;color:#233}
+    .nav__link:hover{color:#00796b}
+    .btn{display:inline-block;padding:0.6rem 1.1rem;border-radius:30px;font-weight:700;cursor:pointer;border:none}
+    .btn--primary{background:#00796b;color:#fff}
+    .btn--primary:hover{background:#005d4d}
+    .btn--outline{background:transparent;border:2px solid #00796b;color:#00796b}
+    .nav__toggle{display:none;background:transparent;border:0;font-size:1.3rem;cursor:pointer;color:#00796b}
+
+    /* -------------------------
+       Hero
+       ------------------------- */
+    .hero{
+      position:relative;
+      padding:6rem 0;
+      border-radius:0 0 12px 12px;
+      overflow:hidden;
+      margin-bottom:1rem;
+    }
+    .hero__bg{
+      position:absolute;inset:0;
+      background-image:url('panels.jpg');
+      background-size:cover;background-position:center;
+      filter:brightness(0.45);
+      z-index:0;
+    }
+    .hero__content{position:relative;z-index:2;color:#fff;text-align:center;padding:2rem 0}
+    .hero__title{font-size:2.25rem;line-height:1.05;margin-bottom:0.6rem}
+    .hero__desc{max-width:860px;margin:0.6rem auto 1.4rem;font-size:1.05rem}
+    .hero-actions{display:flex;gap:0.8rem;justify-content:center;flex-wrap:wrap}
+
+    /* -------------------------
+       Sections / Cards
+       ------------------------- */
+    .section{padding:3rem 0}
+    .section--alt{background:#f3faf9}
+    .grid{display:flex;gap:1.25rem;flex-wrap:wrap}
+    .col-4{flex:1 1 30%;min-width:240px}
+    .col-6{flex:1 1 45%;min-width:260px}
+    .card{background:#fff;padding:1.6rem;border-radius:12px;box-shadow:0 6px 18px rgba(16,32,35,0.06)}
+    .card__title{color:#00796b;margin-bottom:0.5rem;font-weight:700}
+
+    /* About layout specifics */
+    .rounded{border-radius:12px}
+
+    /* Badges */
+    .badges{display:flex;gap:0.5rem;margin:0.75rem 0}
+    .badge{padding:0.35rem 0.75rem;border-radius:999px;font-weight:700;font-size:0.85rem;color:#fff}
+    .badge--success{background:#00796b}
+    .badge--warning{background:#fbc02d;color:#222}
+    .badge--danger{background:#d32f2f}
+
+    /* CEO info */
+    .ceo-info{display:flex;gap:1rem;align-items:flex-start;margin-top:1rem}
+    .ceo-avatar{width:110px;height:110px;border-radius:999px;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+
+    /* CTA image style */
+    .shadow{box-shadow:0 10px 30px rgba(16,32,35,0.12)}
+
+    /* Footer */
+    footer.site-footer{background:#263238;color:#dfeff0;padding:2.4rem 0;margin-top:1rem;border-top:1px solid rgba(255,255,255,0.04)}
+    .footer__grid{display:flex;gap:2rem;flex-wrap:wrap}
+    .footer h3,h4{color:#fff;margin-bottom:0.5rem}
+    .footer a{color:#dfeff0}
+    .footer a:hover{color:#aee0d7}
+
+    /* Contact form */
+    .contact-form{display:flex;flex-direction:column;gap:0.6rem}
+    .contact-form input,.contact-form textarea{padding:0.7rem;border-radius:8px;border:1px solid rgba(16,32,35,0.08);font-size:0.95rem}
+    .contact-form input:focus,.contact-form textarea:focus{outline:2px solid rgba(0,121,107,0.12)}
+
+    /* WhatsApp floating */
+    .whatsapp-float{
+      position:fixed;right:20px;bottom:20px;z-index:1200;
+      display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:0.7rem 0.85rem;border-radius:999px;box-shadow:0 12px 30px rgba(0,0,0,0.18)
+    }
+    .whatsapp-float img{width:22px;height:22px}
+    .whatsapp-bubble{display:inline-block;font-weight:700}
+
+    /* Back-to-top */
+    .back-to-top{position:fixed;right:20px;bottom:90px;background:#00796b;color:#fff;padding:0.6rem;border-radius:50%;display:none;cursor:pointer;z-index:1200}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .nav__menu{display:none}
+      .nav__toggle{display:block}
+      .hero__title{font-size:1.9rem}
+      .grid{flex-direction:column}
+      .ceo-info{flex-direction:row}
+    }
+    @media (max-width:520px){
+      .brand span{font-size:0.95rem}
+      .hero{padding:3.4rem 0}
+      .hero__desc{font-size:0.95rem;padding:0 1rem}
+      .hero-actions{flex-direction:column}
+      .ceo-info{flex-direction:column;align-items:center;text-align:center}
+      .contact-form input,.contact-form textarea{font-size:0.95rem}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" role="banner" aria-label="Main header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="logo.png" alt="Ceejay Solar logo">
+        <div>
+          <div style="font-weight:900">Ceejay Solar</div>
+          <div style="font-size:0.8rem;color:#385c55">Power Your Future</div>
+        </div>
+      </div>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="main-nav" id="navToggle">☰</button>
+
+      <nav id="main-nav" class="nav__menu" role="navigation" aria-label="Primary navigation">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#features">Features</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn btn--primary" href="#cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero" aria-label="Hero section">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <h1 class="hero__title">Power Your Home with <strong>Ceejay Solar</strong></h1>
+        <p class="hero__desc">Clean • Reliable • Affordable — tailored solar solutions for homes, businesses, and communities.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#contact" role="button">Get a Free Quote</a>
+          <a class="btn btn--outline" href="#about" role="button">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section section--alt" aria-labelledby="why-choose">
+      <div class="container">
+        <h2 id="why-choose" style="text-align:center;margin-bottom:1rem">Why Choose Ceejay Solar?</h2>
+        <div class="grid" style="margin-top:1rem">
+          <article class="col-4 card" aria-labelledby="rel-title">
+            <img src="https://img.icons8.com/fluency/96/solar-panel.png" alt="solar panel icon" width="64" loading="lazy" style="margin:0 auto 0.8rem;">
+            <h3 id="rel-title" class="card__title">Reliable Energy</h3>
+            <p>Uninterrupted power supply designed to match your consumption profile — day and night with battery-backed systems.</p>
+          </article>
+
+          <article class="col-4 card" aria-labelledby="aff-title">
+            <img src="https://img.icons8.com/fluency/96/cheap.png" alt="dollar icon" width="64" loading="lazy" style="margin:0 auto 0.8rem;">
+            <h3 id="aff-title" class="card__title">Affordable Pricing</h3>
+            <p>Flexible payment plans and long-term energy savings with high-quality components and warranties.</p>
+          </article>
+
+          <article class="col-4 card" aria-labelledby="sup-title">
+            <img src="https://img.icons8.com/fluency/96/customer-support.png" alt="support icon" width="64" loading="lazy" style="margin:0 auto 0.8rem;">
+            <h3 id="sup-title" class="card__title">Expert Support</h3>
+            <p>Certified engineers and a 24/7 support team standing by to ensure your system runs at peak performance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container grid" style="align-items:center">
+        <div class="col-6" style="min-width:300px">
+          <img src="NYSC.jpg" alt="Solar installation by Ceejay Solar" class="rounded shadow" loading="lazy">
+        </div>
+        <div class="col-6">
+          <h2 id="about-heading">About Us</h2>
+          <p>Ceejay is a multi-sector franchise with a mission to transform lives through solar power, quality food production, and innovative fashion. We design, install and maintain systems built to last.</p>
+
+          <div class="badges" aria-hidden="true">
+            <span class="badge badge--success">Solar Energy</span>
+            <span class="badge badge--warning">Meat Production</span>
+            <span class="badge badge--danger">Fashion Design</span>
+          </div>
+
+          <div class="ceo-info" style="margin-top:1rem">
+            <img src="ceo.jpg" alt="Emmanuel Asaolu, CEO" class="ceo-avatar shadow" loading="lazy">
+            <div>
+              <div style="font-weight:800">Emmanuel Asaolu</div>
+              <div style="font-size:0.95rem;color:#385c55;margin-bottom:0.6rem">CEO, Ceejay Franchise</div>
+              <p style="font-size:0.95rem;color:#2b3c37">Emmanuel is a graduate of Ekiti State University with hands-on solar experience — from Transmission Company of Nigeria internships to NYSC solar installation and training roles. He has led multiple projects including large-scale commercial installs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="section section--alt" aria-label="Call to action">
+      <div class="container" style="text-align:center">
+        <h2>Take the Leap Towards Energy Independence</h2>
+        <p style="max-width:760px;margin:0.6rem auto 1.4rem">Join hundreds of satisfied clients who trust Ceejay Solar to power their homes and businesses.</p>
+        <div style="display:flex;justify-content:center;gap:0.8rem;flex-wrap:wrap">
+          <a class="btn btn--primary" href="#contact">Request a Free Quote</a>
+          <a class="btn btn--outline" href="#features">Explore Features</a>
+        </div>
+        <div style="margin-top:1rem;max-width:720px;margin-left:auto;margin-right:auto">
+          <img src="https://images.unsplash.com/photo-1594737625785-cd4ca8dfef98?auto=format&fit=crop&w=1000&q=80" alt="Solar panels at sunset" class="rounded shadow" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="site-footer" role="contentinfo" aria-label="Footer and contact">
+    <div class="container footer__grid">
+      <div style="flex:1 1 300px">
+        <h3>Ceejay Solar</h3>
+        <p>Empowering communities through sustainable solar energy, quality food, and fashion.</p>
+        <small>© <span id="currentYear"></span> Ceejay Franchise. All rights reserved.</small>
+      </div>
+
+      <div style="flex:1 1 220px">
+        <h4>Quick Links</h4>
+        <ul style="list-style:none;padding-left:0">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div style="flex:1 1 320px">
+        <h4>Contact Us</h4>
+        <p>📞 <a href="tel:+2349166354417" style="color:#dfeff0">+234 916 635 4417</a></p>
+        <p>✉️ <a href="mailto:ceejaysolar@gmail.com">ceejaysolar@gmail.com</a></p>
+        <p>🏠 6th Ahmed Tijani Street, Ahmadiyya, Lagos State</p>
+
+        <!-- Contact form (Formspree) -->
+        <form class="contact-form" action="https://formspree.io/f/xrbaedoq" method="POST" aria-label="Contact form">
+          <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+          <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
+          <textarea name="message" rows="4" placeholder="Your Message" required aria-label="Your message"></textarea>
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating CTA -->
+  <a class="whatsapp-float" href="https://wa.me/2349166354417" target="_blank" rel="noopener" aria-label="Chat with Ceejay on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp icon" loading="lazy">
+    <span class="whatsapp-bubble">Chat: +234 916 635 4417</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script>
+    // Small utilities for nav toggle, smooth menu, and back-to-top
+    (function(){
+      // Set current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // Mobile nav toggle
+      const navToggle = document.getElementById('navToggle');
+      const mainNav = document.getElementById('main-nav');
+      navToggle.addEventListener('click', function(){
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        if(mainNav.style.display === 'flex') {
+          mainNav.style.display = '';
+        } else {
+          mainNav.style.display = 'flex';
+          mainNav.style.flexDirection = 'column';
+          mainNav.style.background = 'rgba(255,255,255,0.98)';
+          mainNav.style.padding = '0.8rem';
+          mainNav.style.borderRadius = '8px';
+          mainNav.style.boxShadow = '0 6px 20px rgba(16,32,35,0.08)';
+        }
+      });
+
+      // Close mobile nav when clicking a link (small screens)
+      mainNav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A' && window.innerWidth < 900){
+          mainNav.style.display = '';
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Back to top logic
+      const backBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function(){
+        if(window.scrollY > 400) {
+          backBtn.style.display = 'block';
+        } else {
+          backBtn.style.display = 'none';
+        }
+      });
+      backBtn.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}) });
+
+      // Smooth offset scroll for anchors (accounting for sticky header)
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function(e){
+          const targetId = this.getAttribute('href').slice(1);
+          if(!targetId) return;
+          const el = document.getElementById(targetId);
+          if(el){
+            e.preventDefault();
+            const offset = 82; // header height
+            const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({top,behavior:'smooth'});
+          }
+        });
+      });
+
+      // Accessibility: trap focus on nav when opened (simple)
+      navToggle.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.click(); }
+      });
+
+    })();
+  </script>
+
+  <!-- Social links structured data for SEO (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Ceejay Solar",
+    "url":"",
+    "logo":"logo.png",
+    "sameAs":[
+      "https://facebook.com/ceejaysolar",
+      "https://instagram.com/ceejaysolar",
+      "https://linkedin.com/ASAOLUEMMANUEL"
+    ],
+    "contactPoint":[{"@type":"ContactPoint","telephone":"+2349166354417","contactType":"customer service"}]
+  }
+  </script>
+</body>
+</html>
